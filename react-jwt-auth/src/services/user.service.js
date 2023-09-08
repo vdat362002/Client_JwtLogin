@@ -1,7 +1,7 @@
 import axios from 'axios';
 import authHeader from './auth-header';
 
-const API_URL = 'https://node-js-jwt-auth-mongodb-gules.vercel.app/api/test/';
+const API_URL = 'https://server-nodejs-jwt.onrender.com/api/test/';
 
 class UserService {
   getPublicContent() {

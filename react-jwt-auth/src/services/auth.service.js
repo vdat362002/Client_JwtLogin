@@ -7,8 +7,7 @@ class AuthService {
     return axios({
       url: API_URL + 'signin',
       data: {
-        username: username,
-        password: password
+        username, password
       },
       method:'POST',
       withCredentials: true,

@@ -4,16 +4,8 @@ const API_URL = "https://server-nodejs-jwt.onrender.com/api/auth/";
 
 class AuthService {
   login(username, password) {
-    return axios({
-      url: API_URL + 'signin',
-      data: {
-        username, password
-      },
-      method:'POST',
-      withCredentials: true,
-      headers: {
-        'Content-Type': 'multipart/form-data',
-      }
+    return axios.post(API_URL + 'signin', {
+      username, password
     })
       .then(response => {
         if (response.data.accessToken) {

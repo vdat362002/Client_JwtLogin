@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://node-js-jwt-auth-mongodb-gules.vercel.app/api/auth/";
+const API_URL = "https://node-js-jwt-auth-mongodb-gules.vercel.app/";
 
 class AuthService {
   login(username, password) {

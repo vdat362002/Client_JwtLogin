@@ -7,6 +7,7 @@ export default class BoardUser extends Component {
   constructor(props) {
     super(props);
 
+    
     this.state = {
       content: ""
     };

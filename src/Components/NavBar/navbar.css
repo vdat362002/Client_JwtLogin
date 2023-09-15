@@ -1,0 +1,64 @@
+.navbar-container {
+    display: flex;
+    padding: 1rem 1.5rem;
+    justify-content: flex-end;
+    background-color: rgb(105, 105, 105);
+    align-items: center;
+}
+
+.navbar-container > * {
+    margin: 0 1.25rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: red !important; 
+}
+
+.navbar-home {
+    margin-right: 75%;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.navbar-login {
+    background-color: rgb(162, 198, 164);
+    padding: 0.35rem;
+    border-radius: 6px;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-register {
+    background-color: rgb(162, 198, 164);
+    padding: 0.35rem;
+    border-radius: 6px;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-user {
+    padding: 0.35rem;
+    background-color: rgb(162, 198, 164);
+    border-radius: 6px;
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-logout {
+    background-color: rgb(162, 198, 164);
+    padding: 0.35rem;
+    border-radius: 6px;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

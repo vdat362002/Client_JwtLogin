@@ -8,6 +8,7 @@ export const loginUser  = async(user, dispatch, navigate) => {
     const res = await axios.post("https://auth-server-fmp.vercel.app/auth/login", user, {
         withCredentials: true
     });
+    
    
     dispatch(loginSuccess(res.data)); 
     localStorage.setItem('jwt', JSON.stringify(res.data.data)

@@ -19,7 +19,7 @@ const NavBar = () => {
       <Link to="/" className="navbar-home"> Home </Link>
       {user? (
         <>
-        <p className="navbar-user">Hi, <span> {user.data.email}  </span> </p>
+        <p className="navbar-user">Hello, <span> {user.data.email}  </span> </p>
         <Link to="/login" className="navbar-logout" onClick={handleLogout}> Logout</Link>
         </>
       ) : (    

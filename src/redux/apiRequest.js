@@ -11,7 +11,7 @@ export const loginUser  = async(user, dispatch, navigate) => {
     
    
     dispatch(loginSuccess(res.data)); 
-    localStorage.setItem('jwt', JSON.stringify(res.data.data)
+    localStorage.setItem('token', JSON.stringify(res.data.data)
     )
     navigate("/");
     return null;
@@ -50,7 +50,7 @@ export const logOut = async(dispatch, navigate, accessToken, axiosJWT) => {
             withCredential: true
 
         })
-        localStorage.removeItem('jwt')
+        localStorage.removeItem('token')
         dispatch(logoutSuccess())
         navigate("/login")
     } catch (error) {
